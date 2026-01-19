@@ -137,8 +137,7 @@ const Home = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen={true}
               ></iframe>
-              <div className="absolute inset-0 border-4 border-primary/20 rounded-3xl group-hover:border-primary/40 transition-colors duration-300"></div>
-            </div>
+              </div>
           </motion.div>
         </div>
       </section>
