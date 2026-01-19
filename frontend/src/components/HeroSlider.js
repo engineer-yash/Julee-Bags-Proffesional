@@ -107,6 +107,10 @@ const HeroSlider = ({ images }) => {
           .swiper-button-prev:after {
             font-size: 16px;
           }
+          
+          .swiper-pagination-bullet {
+            display: none;
+          }
         }
       `}</style>
     </motion.div>
