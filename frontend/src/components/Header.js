@@ -56,9 +56,9 @@ const Header = () => {
       >
         <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center space-x-6 mb-2 sm:mb-0">
-            <a href="tel:7498821933" className="flex items-center hover:text-primary-light transition-colors group">
+            <a href="tel:+91 7498821933" className="flex items-center hover:text-primary-light transition-colors group">
               <HiPhone className="mr-1.5 group-hover:animate-bounce" />
-              <span>7498821933</span>
+              <span>+91 7498821933</span>
             </a>
             <a href="mailto:sales@juleebags.com" className="flex items-center hover:text-primary-light transition-colors group">
               <HiMail className="mr-1.5 group-hover:animate-bounce" />
