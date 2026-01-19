@@ -134,9 +134,8 @@ const Home = () => {
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/jJ8uB6C9aYI?si=bh90H0gEjk_gMkRC"
                 title="Julee Bags Story"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                allowFullScreen={true}
               ></iframe>
               <div className="absolute inset-0 border-4 border-primary/20 rounded-3xl group-hover:border-primary/40 transition-colors duration-300"></div>
             </div>
