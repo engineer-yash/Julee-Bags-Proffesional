@@ -21,18 +21,24 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
+    
+    try {
+      await contactAPI.submit(formData);
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert(error.response?.data?.message || "Error sending message. Please try again.");
+    }
   };
 
   const contactInfo = [
