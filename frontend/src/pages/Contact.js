@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { HiLocationMarker, HiPhone, HiMail, HiClock } from "react-icons/hi";
+import { contactAPI } from "../services/api";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
